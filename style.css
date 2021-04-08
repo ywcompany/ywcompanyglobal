@@ -141,7 +141,7 @@ color: #000;
 
  .aboutus {
 
-    margin : 10px;
+    margin : 5px;
     padding: 10px;
     justify-content: center;
  } 
@@ -174,8 +174,8 @@ margin: 2rem auto;
 
 .circle {
   clip-path: circle(50%);
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   display: flex;
   margin: -20px;
 
