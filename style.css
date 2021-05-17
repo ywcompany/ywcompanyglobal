@@ -25,12 +25,12 @@
 
 html {font-size: 18px;
         font-family:'GmarketSansMedium';
-        scroll-behavior: smooth;} 
+} 
 
 
-@media(max-width: 850px) {
+@media(max-width: 900px) {
 
-    html{font-size: 12px}
+    html{font-size: 10px}
     header{display: none;}
 }
 
@@ -39,9 +39,10 @@ body {margin: 0;
     padding: 0;;
 }
 
-section {
 
-    height: 100vh;
+section h2{
+
+  font-size: 2rem;
 }
 
 header{
@@ -53,7 +54,7 @@ header{
     align-items: center;
     padding: 40px 100px;
     transition: 0.6s;
-    z-index: 1;
+    z-index: 99999999;
     
 }
 
@@ -99,6 +100,7 @@ header.sticky ul li a, header.sticky #logo {
 color: #000;
 
 }
+
  
 
 .home {
@@ -141,8 +143,7 @@ color: #000;
 
  .aboutus {
 
-    margin : 5px;
-    padding: 10px;
+
     justify-content: center;
     height: auto;
  } 
@@ -168,18 +169,17 @@ margin: 2rem auto;
 
 .aboutus article {
 
-    margin: 0, auto;
-    padding: 6rem 15rem;
+    margin: 6rem 10rem;
     line-height: 2rem;
 }
 
 
 .circle {
   clip-path: circle(50%);
-  height: 15rem;
-  width: 15rem;
+  height: 18rem;
+  width: 18rem;
   display: flex;
-  margin: -20px;
+  margin: -10px;
 
   justify-content: center;
   text-align: center;
@@ -205,7 +205,7 @@ margin: 2rem auto;
 .circle p{
 
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 /*history*/
 
@@ -213,22 +213,19 @@ margin: 2rem auto;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #1D1D1D;
     
   }
 
 .history h2 { 
     color: white;
-    margin: 2rem auto;
-    margin-bottom: 10rem;
+    margin: 5rem auto;
 }
 
 .history .vertical {
 
     border-left: 6px solid white;
-    height: 500px;
+    height: 50rem;
     position:absolute;
     left: 50%;
 }
@@ -237,14 +234,12 @@ margin: 2rem auto;
   .history .entries {
     margin: 5rem auto;
     width: calc(100% - 80px);
-    max-width: 1400px;
-    position: relative;
-    left: -5px;
   }
+
   .history .entries .entry {
     width: calc(50% - 80px);
     float: left;
-    padding: 20px;
+    padding: 10px 20px;
     clear: both;
     text-align: right;  
   }
@@ -275,7 +270,6 @@ margin: 2rem auto;
     height: 24px;
     -webkit-transform: translate(8px, -50%);
             transform: translate(8px, -50%);
-    z-index: 99999999;
   }
   .history .entries .entry .body {
     color: #aaa;
@@ -296,6 +290,10 @@ margin: 2rem auto;
   }
   
 
+.history span img{
+
+  width: 10rem;
+}
   
 
 
@@ -437,9 +435,10 @@ margin: 3rem;
 }
 
 .fa {
-  padding: 20px;
+  padding: 1rem;
   font-size: 2rem;
   width: 3rem;
+  height: 3rem;
   text-align: center;
   text-decoration: none;
 }
@@ -460,3 +459,24 @@ margin: 3rem;
   color: white;
 }
 
+
+@media (max-width: 900px) {
+
+
+  header.sticky{
+
+    justify-content: center;
+
+  }
+
+  header{
+
+    justify-content: center;
+  }
+
+  header ul {
+    display: none;
+  }
+
+
+}
