@@ -28,11 +28,7 @@ html {font-size: 18px;
 } 
 
 
-@media(max-width: 900px) {
 
-    html{font-size: 10px}
-    header{display: none;}
-}
 
 
 body {margin: 0;
@@ -161,9 +157,10 @@ color: #000;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
-justify-content: center;
-
-margin: 0 auto;
+justify-content: space-evenly;
+width: 45rem;
+height: 15rem;
+margin: 0.5rem auto;
 }
 
 .aboutus article:nth-of-type(2) {
@@ -175,10 +172,10 @@ margin: 0 auto;
 
 .circle {
   border-radius: 100%;
-  height: 20rem;
-  width: 20rem;
+  height: 100%;
+  width: calc(100% / 3);
   display: flex;
-  margin-right: -20px;
+  margin: 0 -2rem;
 
   justify-content: center;
   align-items: center;
@@ -203,7 +200,7 @@ margin: 0 auto;
 .circle p{
 
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 /*history*/
 
@@ -223,7 +220,7 @@ margin: 0 auto;
 .history .vertical {
 
     border-left: 6px solid white;
-    height: 50rem;
+    height: 60rem;
     position:absolute;
     left: 50%;
 }
@@ -458,7 +455,11 @@ margin: 3rem;
 }
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 800px) {
+
+  html {font-size: 12px;}
+
 
 
   header.sticky{
@@ -502,14 +503,16 @@ margin: 3rem;
 }
 
 
-.circle {
 
-  width: 15rem;
-  height: 15rem;
+@media(max-width: 600px) {
+
+  html{font-size: 10px}
 }
 
-.circle p{
+@media (max-width: 500px) {
 
-  font-size: 1.2rem;
+  html{font-size: 8px;}
+  
 }
+
 }
