@@ -32,7 +32,7 @@ html {font-size: 18px;
 
 
 body {margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 
 
@@ -84,7 +84,7 @@ header ul li {
 
 header ul li a {
     position: relative;
-    margin: 0,1rem;
+    margin: 0.1rem;
     letter-spacing: 2px;
     color: white;
     text-align: center;
@@ -165,7 +165,7 @@ margin: 0.5rem auto;
 
 .aboutus article:nth-of-type(2) {
 
-    margin: 6rem 3rem;
+    margin: 6rem 5rem;
     line-height: 2rem;
 }
 
@@ -296,8 +296,9 @@ margin: 0.5rem auto;
 
 .brands {
 
-    height: 60vh; 
+    height: 40vh;
     position: relative;
+    display: flex;
     text-align: center;
     justify-content: center;
     background-color: #69c0ac;
@@ -306,8 +307,9 @@ margin: 0.5rem auto;
 .brands div {
 
    position: absolute;
-   left: calc(50% - 16.131rem);
-   top: calc(50% - 4.135rem);
+   top: 35%;
+   margin: auto 0;
+
 }
 
 .brands h2 {
